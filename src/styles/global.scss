@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+@import "./colors.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: $super_dark;
+    color: white;
+}
+
+main {
+    background-color: $super_light;
+    display: flex;
+    padding: 16px 0;
+    gap: 16px;
+}

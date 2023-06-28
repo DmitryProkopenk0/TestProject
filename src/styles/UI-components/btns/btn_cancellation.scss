@@ -1,0 +1,12 @@
+@import "../../colors.scss";
+
+.btn_cancellation {
+    cursor: pointer;
+    font-family: "Golos Text", sans-serif;
+    border-radius: 4px;
+    border: 1px solid var(--light-003, #e9edf1);
+    color: $silver_light;
+    width: 100px;
+    height: 40px;
+    padding: 12px;
+}

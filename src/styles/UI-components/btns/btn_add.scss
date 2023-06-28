@@ -1,0 +1,15 @@
+@import "../../colors.scss";
+
+.btn_add {
+    cursor: pointer;
+    font-family: "Golos Text", sans-serif;
+    background-color: $primary;
+    color: white;
+
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    background: var(--primary-002, #1f8efa);
+    outline: none;
+    border: transparent;
+}

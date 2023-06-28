@@ -1,0 +1,496 @@
+@import "./colors.scss";
+
+.model__help__context__false {
+    display: none;
+
+    .help__context__false {
+        display: none;
+    }
+}
+
+.model__help__context {
+    position: fixed;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+.help__context {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    z-index: 5;
+
+    box-shadow: 0px 11px 53px 0px rgba(27, 36, 49, 0.05), 0px 28px 40px 0px rgba(27, 36, 49, 0.15);
+    border-radius: 16px;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+
+    .social__network__container {
+        padding-left: 16px;
+        display: flex;
+        gap: 9px;
+        .social__network {
+            cursor: pointer;
+        }
+    }
+
+    .help__top__context {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        padding: 18px 16px;
+
+        .close {
+            z-index: 100;
+            cursor: pointer;
+        }
+
+        .users__help {
+            font-size: 18px;
+            font-weight: 500;
+            font-family: "Golos Text", sans-serif;
+            color: $super_dark;
+        }
+    }
+
+    .have__answer {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+
+        .answer__item3:hover {
+            color: $primary;
+        }
+
+        .answer__item3 {
+            cursor: pointer;
+            display: flex;
+            height: 30px;
+            border-bottom: 1px solid $light_silver;
+            padding-bottom: 40px;
+
+            .answer__text {
+                font-size: 14px;
+                font-weight: 500;
+                padding-left: 18px;
+
+                font-family: "Golos Text", sans-serif;
+            }
+        }
+        .answer__item:hover {
+            color: $primary;
+        }
+        .answer__item {
+            cursor: pointer;
+            display: flex;
+            height: 30px;
+
+            .find__answer {
+                font-weight: 700;
+                font-size: 12px;
+                font-family: "Golos Text", sans-serif;
+                color: $super_light;
+            }
+
+            .answer__text {
+                font-size: 14px;
+                font-weight: 500;
+                padding-left: 18px;
+
+                font-family: "Golos Text", sans-serif;
+            }
+        }
+    }
+}
+
+.context__false {
+    display: none;
+}
+
+.side__container {
+    position: relative;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 59px;
+    background-color: $super_dark;
+
+    .user__context {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 240px;
+        height: 192px;
+        top: 0;
+        right: 100%;
+        background-color: rgb(255, 255, 255);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        box-shadow: 0px 3px 13px 0px rgba(27, 36, 49, 0.05), 0px 7px 10px 0px rgba(27, 36, 49, 0.15);
+
+        .top__context {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 12px 16px;
+            background-color: #ffffff;
+            padding: 18px 16px;
+
+            .left__top__context {
+                display: flex;
+                flex-direction: column;
+
+                .user__name {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: $default_dark;
+                    font-family: "Golos Text", sans-serif;
+                }
+
+                .job__title {
+                    font-size: 12px;
+                    font-family: "Golos Text", sans-serif;
+                    color: $super_light;
+                }
+            }
+        }
+
+        .context__content {
+            display: flex;
+            align-items: center;
+            height: 36px;
+            width: 100%;
+            padding: 15px 16px;
+            background-color: #eff3f6;
+
+            .time {
+                display: flex;
+                justify-content: space-between;
+                width: 115px;
+                border-right: 1px solid $light_silver;
+                padding-right: 8px;
+
+                .play-btn {
+                    cursor: pointer;
+                }
+
+                .time__text {
+                    color: $silver_light;
+                    font-size: 18px;
+                    font-family: "Golos Text", sans-serif;
+                }
+            }
+
+            .day__week {
+                display: flex;
+                justify-content: space-between;
+                width: 70px;
+                padding-left: 8px;
+
+                .day__text {
+                    color: $primary;
+                    font-size: 16px;
+                    font-weight: 700;
+                    font-family: "Golos Text", sans-serif;
+                }
+
+                .time__text {
+                    color: $default_dark;
+                    font-size: 16px;
+                    font-weight: 700;
+                    font-family: "Golos Text", sans-serif;
+                }
+            }
+        }
+
+        .my__profile {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 10px 16px;
+
+            .exit__profile {
+                display: flex;
+                justify-content: space-between;
+                width: 147px;
+                height: 17px;
+
+                .profile__text {
+                    color: $default_dark;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+
+            .profile {
+                display: flex;
+                justify-content: space-between;
+                width: 120px;
+                height: 17px;
+
+                .profile__text {
+                    color: $default_dark;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .side__items {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .items {
+            width: 100%;
+        }
+
+        .help__user__container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: $ultra-yellow;
+            margin-bottom: 20px;
+        }
+    }
+
+    .user__container {
+        cursor: pointer;
+        background: #ecf6ff;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+    }
+
+    .container {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        border-bottom: 1px solid $silver_light;
+    }
+
+    .container__business {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        .my__business__false {
+            display: none;
+        }
+
+        .my__business {
+            width: 360px;
+            z-index: 5;
+            height: 90vh;
+            gap: 16px;
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            top: 0;
+            right: 100%;
+            box-shadow: 0px 3px 13px 0px rgba(27, 36, 49, 0.05), 0px 7px 10px 0px rgba(27, 36, 49, 0.15);
+            border-top-left-radius: 16px;
+            border-bottom-left-radius: 16px;
+
+            .main__business__content {
+                display: flex;
+                flex-direction: column;
+                padding: 0 16px;
+
+                .day__item__true {
+                    border-bottom: 1px solid $light_silver;
+                }
+
+                .day__item__false {
+                }
+
+                .day__item {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 16px 0;
+
+                    .right__day__item {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .lead__time {
+                            color: $red;
+                            font-size: 12px;
+                            font-family: "Golos Text", sans-serif;
+                        }
+
+                        .top__right {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 85px;
+
+                            .case__status__text {
+                                padding: 2px 4px;
+                                border-radius: 3px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 13px;
+                                font-weight: 500;
+                                padding: 4px;
+                            }
+
+                            .case__status__text__false {
+                                background-color: #e9edf1;
+                                color: $silver_light;
+                            }
+                            .case__status__text__true {
+                                background-color: $light_primary;
+                                color: $primary;
+                            }
+                        }
+                    }
+
+                    .left__day__item {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .case {
+                            font-size: 13px;
+                            font-weight: 600;
+                            color: $super_dark;
+                            font-family: "Golos Text", sans-serif;
+                        }
+
+                        .case__false {
+                            font-size: 13px;
+                            font-weight: 600;
+                            color: $super_dark;
+                            font-family: "Golos Text", sans-serif;
+                            text-decoration: 1px solid $super_light underline;
+                        }
+
+                        .top__left {
+                            display: flex;
+                            gap: 16px;
+
+                            .top__left__text {
+                                font-size: 14px;
+                                font-weight: 700;
+                                color: $default_dark;
+                                font-family: "Golos Text", sans-serif;
+                            }
+                        }
+                    }
+                }
+
+                .tasks__day {
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+
+                    .day__text {
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: #c2cad4;
+                    }
+
+                    .day__line {
+                        width: 80%;
+                        height: 1px;
+                        background-color: $light_silver;
+                    }
+                }
+            }
+
+            .search__container {
+                display: flex;
+                align-items: center;
+
+                padding: 10px 16px;
+
+                .search__item {
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid $super_light;
+                    border-radius: 4px;
+                    padding: 8px;
+                    height: 40px;
+                    width: 100%;
+
+                    .search__inp {
+                        padding: 8px;
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        color: $super_light;
+                        font-family: "Golos Text", sans-serif;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .top__my__business {
+                display: flex;
+                flex-direction: column;
+                padding: 18px 16px;
+                background-color: #eff3f6;
+                border-top-left-radius: 16px;
+                .business__tabs {
+                    display: flex;
+                    gap: 16px;
+
+                    .business__text {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $default_dark;
+                        font-family: "Golos Text", sans-serif;
+                        text-decoration: 2px solid $primary underline;
+                    }
+                }
+
+                .my__business__top {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .business__text {
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-family: "Golos Text", sans-serif;
+                        color: $super_dark;
+                    }
+                }
+            }
+        }
+    }
+}

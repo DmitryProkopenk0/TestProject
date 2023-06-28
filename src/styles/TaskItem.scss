@@ -1,0 +1,442 @@
+@import "../styles/colors.scss";
+
+.calendar__container__false {
+    display: none;
+
+    .calendar__container__false {
+        display: none;
+    }
+}
+
+.model__help__context {
+    .calendar__container {
+        display: flex;
+        flex-direction: column;
+        width: 532px;
+        box-shadow: 0px 5px 27px 0px rgba(27, 36, 49, 0.05), 0px 13px 20px 0px rgba(27, 36, 49, 0.15);
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+
+        .done__clear {
+            display: flex;
+            padding: 20px;
+            gap: 30px;
+
+            .btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 36px;
+                width: 96px;
+                font-family: "Golos Text", sans-serif;
+                border: transparent;
+                outline: none;
+                padding: 10px 12px;
+                border-radius: 4px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .done__btn {
+                color: white;
+                background-color: $primary;
+            }
+        }
+
+        .start__finish__time {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            padding: 25px;
+            height: 40px;
+            border-bottom: 1px solid $light_silver;
+
+            .start__text {
+                font-size: 12px;
+                font-family: "Golos Text", sans-serif;
+                color: $super_light;
+            }
+
+            .start__time {
+                font-size: 16px;
+                font-weight: 700;
+                font-family: "Golos Text", sans-serif;
+                color: $default_dark;
+            }
+
+            .full__time {
+                font-size: 13px;
+                font-weight: 500;
+                color: $primary;
+                background-color: $light_primary;
+                font-family: "Golos Text", sans-serif;
+                padding: 4px;
+            }
+        }
+
+        .main__calendar__content {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #dfe3e9;
+
+            .main__calendar__content__left {
+                display: grid;
+                padding-left: 16px;
+                grid-template-columns: repeat(7, 31.1px);
+                gap: 2px;
+
+                .grid__calendar__item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 500;
+                    font-size: 14px;
+                    font-family: "Golos Text", sans-serif;
+                }
+            }
+        }
+
+        .panel__months {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px;
+
+            .first__panel {
+                display: flex;
+                width: 180px;
+                justify-content: space-between;
+
+                .left__calendar {
+                    cursor: pointer;
+                }
+
+                .month__text {
+                    font-size: 16px;
+                    font-family: "Golos Text", sans-serif;
+                    color: $default_dark;
+                }
+            }
+        }
+
+        .top__calendar {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 8px 16px;
+
+            .close__calendar {
+                cursor: pointer;
+            }
+
+            .left__top__calendar {
+                display: flex;
+                justify-content: space-between;
+
+                .term {
+                    cursor: pointer;
+                    width: 70px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 16px;
+
+                    .term__text__false {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $silver_light;
+                        font-family: "Golos Text", sans-serif;
+                    }
+
+                    .term__text {
+                        text-decoration: underline;
+                        text-decoration-color: $primary;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $default_dark;
+                        font-family: "Golos Text", sans-serif;
+                    }
+                }
+
+                .start__finish {
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 130px;
+
+                    .start__finish__text__false {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $silver_light;
+                    }
+
+                    .start__finish__text {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $default_dark;
+                        text-decoration: underline;
+                        text-decoration-color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main__container {
+    border-radius: 8px;
+    border-top: 4px solid $primary;
+    background: var(--white, #fff);
+}
+
+.main__container2 {
+    border-radius: 8px;
+    border-top: 4px solid #e91e63;
+    background: var(--white, #fff);
+}
+
+.main__container3 {
+    border-radius: 8px;
+    border-top: 4px solid #ffb300;
+    background: var(--white, #fff);
+}
+
+.refresh {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.increase {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.head__content {
+    display: flex;
+    padding: 14px 16px;
+
+    .tasks__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 42px;
+
+        .distribution__tasks {
+            color: $default_dark;
+            font-size: 16px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 500;
+            line-height: 115%;
+        }
+
+        .some__tasks {
+            display: flex;
+            width: 540px;
+            height: 18px;
+
+            .time__context {
+                position: relative;
+                height: 110px;
+
+                .times__container {
+                    display: flex;
+                }
+
+                .false__time__selection__context {
+                    display: none;
+                }
+
+                .time__selection__context {
+                    display: flex;
+                    z-index: 9999;
+                    flex-direction: column;
+                    box-shadow: 0px 5px 27px 0px rgba(27, 36, 49, 0.05), 0px 13px 20px 0px rgba(27, 36, 49, 0.15);
+                    border-radius: 4px;
+                    border: 1px solid var(--light-004, #dfe3e9);
+                    padding: 8px 0;
+                    width: 88px;
+
+                    .item__selection {
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 30px;
+                        background-color: white;
+                        padding: 10px 16px;
+                        color: $default_dark;
+                        font-size: 14px;
+                        font-weight: 700;
+                        font-family: "Golos Text", sans-serif;
+                    }
+                }
+
+                .tasks__time {
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: $default_dark;
+                    font-family: "Golos Text", sans-serif;
+                    text-decoration: underline;
+                    text-decoration-color: $primary;
+                    color: $default_dark;
+                    padding-right: 4px;
+                }
+
+                .tasks__time2 {
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: $default_dark;
+                    font-family: "Golos Text", sans-serif;
+                    text-decoration: underline;
+                    text-decoration-color: $primary;
+                    color: $default_dark;
+                }
+
+                .tasks__time__false {
+                    display: none;
+                }
+            }
+
+            .tasks__text {
+                color: $silver_light;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: "Golos Text", sans-serif;
+            }
+        }
+    }
+
+    .black-more {
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.task__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer__task {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: #dfe3e9;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 2px 0px 0px #dfe3e9 inset;
+    padding-top: 16px;
+
+    .lead__time {
+        color: $super_light;
+        line-height: 120%;
+        font-size: 13px;
+    }
+
+    .footer__btns {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 56px;
+
+        .refresh__modal {
+            display: flex;
+            align-items: center;
+            top: -50px;
+            position: absolute;
+
+            width: 170px;
+            padding: 5px 8px;
+            border-radius: 4px;
+            background-color: $super_dark;
+            color: white;
+        }
+
+        .refresh__modal__false {
+            display: none;
+        }
+
+        .increase__modal {
+            display: flex;
+            align-items: center;
+            top: -50px;
+            position: absolute;
+            width: 170px;
+            padding: 5px 8px;
+            border-radius: 4px;
+            background-color: $super_dark;
+            color: white;
+        }
+
+        .increase__modal__false {
+            display: none;
+        }
+    }
+}
+
+.col__contacts {
+    display: flex;
+}
+
+.user__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+
+    .user__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 536px;
+        height: 60px;
+        padding: 8px 16px;
+        border: 1px solid $light_silver;
+
+        .user__item__left {
+            display: flex;
+            flex-direction: column;
+
+            .user__name {
+                font-size: 14px;
+                font-family: "Golos Text", sans-serif;
+                font-weight: 500;
+                line-height: 115%;
+                color: $default_dark;
+            }
+
+            .user__information {
+                display: flex;
+
+                .telephone__inf {
+                    display: flex;
+                    padding-right: 10px;
+
+                    .telephone__text {
+                        color: $super_light;
+                        font-size: 12px;
+                        font-family: "Golos Text", sans-serif;
+                        line-height: 115%;
+                    }
+                }
+
+                .email__inf {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .email__text {
+                        color: $super_light;
+                        font-size: 12px;
+                        font-family: "Golos Text", sans-serif;
+                        line-height: 115%;
+                        padding-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

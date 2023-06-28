@@ -1,0 +1,129 @@
+@import "./colors.scss";
+
+.btn_add {
+    cursor: pointer;
+    font-family: "Golos Text", sans-serif;
+    background-color: $primary;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    background: var(--primary-002, #1f8efa);
+    outline: none;
+    border: transparent;
+}
+
+.underNav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    padding: 25px 16px;
+
+    .additional__information {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .additional__descr {
+            color: $default_dark;
+            font-family: "Golos Text", sans-serif;
+            font-size: 18px;
+            border-right: 1px solid $light_silver;
+            padding-right: 16px;
+        }
+
+        .date__time {
+            display: flex;
+            justify-content: space-between;
+            width: 67px;
+            height: 100%;
+            padding-right: 70px;
+            padding-left: 16px;
+            border-right: 1px solid $light_silver;
+            .date {
+                color: $primary;
+                font-family: "Golos Text", sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .time {
+                font-weight: 700;
+                color: $default_dark;
+                font-family: "Golos Text", sans-serif;
+            }
+        }
+
+        .weather {
+            border-right: 1px solid $light_silver;
+            display: flex;
+            justify-content: space-between;
+            width: 52px;
+            padding-right: 60px;
+            padding-left: 16px;
+            .weather-text {
+                font-weight: 700;
+                color: $default_dark;
+                font-family: "Golos Text", sans-serif;
+            }
+        }
+    }
+
+    .add__task__panel {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 80px;
+
+        .question {
+            cursor: pointer;
+        }
+
+        .black-more {
+            cursor: pointer;
+        }
+
+        .btn__container {
+            position: relative;
+
+            .board__false {
+                display: none;
+            }
+
+            .add__board {
+                box-shadow: 0px 5px 27px 0px rgba(27, 36, 49, 0.05), 0px 13px 20px 0px rgba(27, 36, 49, 0.15);
+                border-radius: 4px;
+                right: 0;
+                top: 50px;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                width: 200px;
+                height: 260px;
+                padding: 8px 0;
+                background-color: white;
+
+                .item__board {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 35px;
+                    background-color: white;
+                    padding: 10px 16px;
+                    color: $default_dark;
+                    font-size: 14px;
+                    font-weight: 700;
+                    font-family: "Golos Text", sans-serif;
+                }
+
+                .item__board:hover {
+                    color: $primary;
+                    background-color: $light_primary;
+                }
+            }
+        }
+    }
+}
